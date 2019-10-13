@@ -1,0 +1,350 @@
+%!PS-Adobe-3.0
+%%Creator: graphviz version 2.40.1 (20161225.0304)
+%%Title: %3
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+/tapered { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 626 296
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 590 260 boxprim clip newpath
+1 1 set_scale 0 rotate 40 40 translate
+% [root] aws_instance.example
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 396.2843 108 moveto
+257.2843 108 lineto
+257.2843 72 lineto
+396.2843 72 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+265.2843 86.3 moveto 123 (aws_instance.example) alignedtext
+grestore
+% [root] provider.aws
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 326.7843 36 moveto
+246.8509 18 lineto
+326.7843 0 lineto
+406.7177 18 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+291.2843 14.3 moveto 71 (provider.aws) alignedtext
+grestore
+% [root] aws_instance.example->[root] provider.aws
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 326.7843 71.8314 moveto
+326.7843 64.131 326.7843 54.9743 326.7843 46.4166 curveto
+stroke
+0 0 0 edgecolor
+newpath 330.2844 46.4132 moveto
+326.7843 36.4133 lineto
+323.2844 46.4133 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 330.2844 46.4132 moveto
+326.7843 36.4133 lineto
+323.2844 46.4133 lineto
+closepath stroke
+grestore
+% [root] meta.count-boundary (EachMode fixup)
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+176.7843 162 176.5689 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+48.7843 158.3 moveto 256 ([root] meta.count-boundary \(EachMode fixup\)) alignedtext
+grestore
+% [root] meta.count-boundary (EachMode fixup)->[root] aws_instance.example
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 213.4784 144.3868 moveto
+233.4999 134.7765 258.4997 122.7766 279.9191 112.4953 curveto
+stroke
+0 0 0 edgecolor
+newpath 281.6645 115.5399 moveto
+289.1651 108.0572 lineto
+278.6353 109.2292 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 281.6645 115.5399 moveto
+289.1651 108.0572 lineto
+278.6353 109.2292 lineto
+closepath stroke
+grestore
+% [root] provider.aws (close)
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+476.7843 162 105.0817 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+403.7843 158.3 moveto 146 ([root] provider.aws \(close\)) alignedtext
+grestore
+% [root] provider.aws (close)->[root] aws_instance.example
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 441.2364 144.937 moveto
+420.9963 135.2218 395.3974 122.9343 373.5442 112.4448 curveto
+stroke
+0 0 0 edgecolor
+newpath 374.9643 109.2441 moveto
+364.4345 108.0721 lineto
+371.9351 115.5548 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 374.9643 109.2441 moveto
+364.4345 108.0721 lineto
+371.9351 115.5548 lineto
+closepath stroke
+grestore
+% [root] root
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+326.7843 234 47.3916 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+298.2843 230.3 moveto 57 ([root] root) alignedtext
+grestore
+% [root] root->[root] meta.count-boundary (EachMode fixup)
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 297.1491 219.7751 moveto
+275.8752 209.5636 246.8009 195.608 222.5569 183.9708 curveto
+stroke
+0 0 0 edgecolor
+newpath 224.0578 180.809 moveto
+213.5279 179.6369 lineto
+221.0286 187.1196 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 224.0578 180.809 moveto
+213.5279 179.6369 lineto
+221.0286 187.1196 lineto
+closepath stroke
+grestore
+% [root] root->[root] provider.aws (close)
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 356.4195 219.7751 moveto
+378.072 209.3819 407.8049 195.1101 432.3013 183.3519 curveto
+stroke
+0 0 0 edgecolor
+newpath 433.9049 186.4645 moveto
+441.4056 178.9818 lineto
+430.8758 180.1538 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 433.9049 186.4645 moveto
+441.4056 178.9818 lineto
+430.8758 180.1538 lineto
+closepath stroke
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 626 296
+end
+restore
+%%EOF
